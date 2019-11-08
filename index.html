@@ -14,6 +14,9 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/grayscale.css" rel="stylesheet">
+  <!--icons library-->
+  <link rel="stylesheet" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/238772c3c0.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="page-top">
@@ -40,26 +43,32 @@
       <div class="row">
 
         <div class="col-md-4 mb-3 mb-md-0">
-            <img src="/img/calendario.jpg" alt="calendario">
-          <p class="text-white-50">Paso 1: Entra al calendario en el siguiente enlace para poder ver los laboratorios y su disponibilidad.
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">Click aqui</a></p>
+          <img src="/img/calendario.jpg" alt="calendario" id="uno">
+          <p class="text-white-50">Paso 1: Entra al calendario en el siguiente enlace para poder ver los laboratorios y
+            su disponibilidad.
+            <a href="http://startbootstrap.com/template-overviews/grayscale/">Click aqui</a>. ¡Recuerda que tienes que
+            haber iniciado sesion!</p>
           </article>
         </div>
 
-        <div class="col-md-4 mb-3 mb-md-0">
-            <img src="/img/calendarioZoom.jpg" alt="calendariozoom">
-          <p class="text-white-50">Paso 2: Al entrar al calendario podras observar en una esquina los colores verde, amarilo y rojo que te indican la disponibilidad del laboratorio y tambien podras filtras los horarios para cada laboratorio (L1,L2 y L3).
+        <div class="col-md-4 mb-3 mb-md-0" id="dos">
+          <img src="/img/calendarioZoom.jpg" alt="calendariozoom">
+          <p class="text-white-50">Paso 2: Al entrar al calendario podras observar en una esquina los colores verde,
+            amarilo y rojo que te indican la disponibilidad del laboratorio y tambien podras filtras los horarios para
+            cada laboratorio (L1,L2 y L3).
           </p>
         </div>
 
         <div class="col-md-4 mb-3 mb-md-0">
-            <img src="/img/click.jpg" alt="calendariozoom">
+          <img src="/img/click.jpg" alt="calendariozoom" id="tres">
           <p class="text-white-50">Paso 3:Para reservar simplemente da click sobre el horario de laboratorio
             disponible
             y simplemente se te pedira que confirmes la reserva y listo!
           </p>
         </div>
-
+      </div>
+      <div>
+        <p class="space"></p>
       </div>
 
     </div>
@@ -90,15 +99,21 @@
   <!-- Signup Section -->
   <section id="signup" class="signup-section">
     <div class="container">
-      <div class="row">
+      <div class="column">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+          <i class="fas fa-comments fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Envianos un mensaje!</h2>
 
           <form class="form-inline d-flex">
+            <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputName"
+              placeholder="Nombre...">
+
             <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail"
-              placeholder="Enter email address...">
+              placeholder="Ingresa tu correo...">
+
+            <textarea class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMesagge"
+              placeholder="Mensaje..."></textarea>
+
             <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
           </form>
 
@@ -113,10 +128,10 @@
 
       <div class="row">
 
-        <div class="col-md-4 mb-3 mb-md-0">
+        <div class="col-md-4 mb-3 mb-md-0" id="space">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
-              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <i class="fas fa-globe-americas logoCards"></i>
               <h4 class="text-uppercase m-0">Dirección</h4>
               <hr class="my-4">
               <div class="small text-black-50">Bulevar Los Próceres, Antiguo Cuscatlán, La Libertad, El Salvador,
@@ -125,10 +140,10 @@
           </div>
         </div>
 
-        <div class="col-md-4 mb-3 mb-md-0">
+        <div class="col-md-4 mb-3 mb-md-0" id="space">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
+              <i class="far fa-envelope logoCards"></i>
               <h4 class="text-uppercase m-0">Correo</h4>
               <hr class="my-4">
               <div class="small text-black-50">
@@ -138,10 +153,10 @@
           </div>
         </div>
 
-        <div class="col-md-4 mb-3 mb-md-0">
+        <div class="col-md-4 mb-3 mb-md-0" id="space">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
-              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <i class="fas fa-phone logoCards"></i>
               <h4 class="text-uppercase m-0">Telefono</h4>
               <hr class="my-4">
               <div class="small text-black-50">2210-6600 ext. 1026</div>
@@ -150,25 +165,19 @@
         </div>
       </div>
 
-      <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      <div class="logos">
+        <a href="#" class="fab fa-facebook-f fb"></a>
+        <a href="#" class="fab fa-twitter tw"></a>
+        <a href="#" class="fab fa-github git"></a>
+      </div>
+
+      <p>Copyrights&copy;Departamento de electrónica e informática, UCA.</p>
     </div>
   </footer>
 
