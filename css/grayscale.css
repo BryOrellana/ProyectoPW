@@ -194,16 +194,27 @@ a{
 }
 
 .about-section {
-  padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%)
+  padding-top: 3rem;
+  background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section img{
+  height: 175px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .about-section p {
-  margin-bottom: 5rem
+  margin-bottom: 9rem;
 }
 
 .projects-section {
-  padding: 10rem 0
+  padding: 10rem 0;
 }
 
 .projects-section .featured-text {
