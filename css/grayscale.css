@@ -40,8 +40,7 @@ a {
   background-color: transparent
 }
 
-#mainNav .navbar-nav .nav-item:active,
-#mainNav .navbar-nav .nav-item:focus {
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: 0;
   background-color: transparent
 }
