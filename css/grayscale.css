@@ -439,4 +439,11 @@ footer .container{
     margin-left: -3px
   }
 
+  #mainNav .disabled {
+    display: none;
+  }
+
+  #mainNav ul:last-child {
+    margin-bottom: 20px;
+  }
 }
