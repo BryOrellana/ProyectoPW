@@ -124,7 +124,7 @@ button {
 	outline: none !important;
 	border: none;
   background: transparent;
-  width: 1px;
+  
 }
 
 button:hover {
