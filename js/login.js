@@ -8,16 +8,13 @@ let carnet_regex = new RegExp('^[0-9]{8}$');
 
 submit_btn.addEventListener("click", () => {
     let carnet = carnet_field.value
-    var url  = "index.html"
-
-    
 
     if (carnet_regex.test(carnet) && password_field.value == carnet_field.value) {
-        alert("Bienvenido :D ");
+       // alert("Bienvenido :D ");
         /*if(carnetBD == carnet.value && passBD == password_field.value) {
             alert("Bienvenido :D ");
         }*/
-        
+        console.log("prueba")
     } else {
         if (carnet_field.value == "" || password_field.value == "") {
             alert("campo de carnet o contraseña vacio");
@@ -28,4 +25,9 @@ submit_btn.addEventListener("click", () => {
         }
     }
 })
- 
+window.addEventListener('keyup',(event)=>{
+    let keyCode = event.keyCode;
+    if(keyCode == 13){
+        submit_btn.click();
+    }
+})
