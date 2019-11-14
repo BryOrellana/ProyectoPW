@@ -42,6 +42,7 @@ var cal = {
   
       // Populate the days of the month
       for (var i=1; i<=daysInMth; i++) { squares.push(i); }
+
   
       // Determine the number of blank squares after end of month
       if (cal.sMon && endDay != 0) {
@@ -113,9 +114,12 @@ var cal = {
       var tForm = "<h1>" + (cal.data[cal.sDay] ? "Editar" : "Agregar") + " reserva</h1>";
       tForm += "<div id='evt-date'>" + cal.sDay + " " + cal.mName[cal.sMth] + " " + cal.sYear + "</div>";
       tForm += "<textarea id='evt-details' placeholder = 'ingresa tu carnet para confirmar' required>" + (cal.data[cal.sDay] ? cal.data[cal.sDay] : "") + "</textarea>";
-      tForm += "<input type='button' value='Cancelar' onclick='cal.close()'/>";
-      tForm += "<input type='button' value='Borrar' onclick='cal.del()'/>";
-      tForm += "<input type='submit' value='Reservar'/>";
+      tForm += "<div class='colorEvt'> <div class='green' id = 'lab1'> </div><p>Lab 1</p>";
+      tForm += "<div class='colorEvt'> <div class='green' id = 'lab2'> </div><p>Lab 2</p>";
+      tForm += "<div class='colorEvt'> <div class='green' id = 'lab3'> </div><p>Lab 3</p>";
+      tForm += "<input type='button' value='Cancelar' class='btnEvt' onclick='cal.close()'/>";
+      tForm += "<input type='button' value='Borrar' class='btnEvt' onclick='cal.del()'/>";
+      tForm += "<input type='submit' value='Reservar' class='btnEvt' />";
   
       // ATTACH
       var eForm = document.createElement("form");
