@@ -272,3 +272,8 @@ input:checked+.mov:after {
     left: 465px;
     top: -450px;
 }
+
+.celOcu {
+    background: red solid;
+    color: red solid;
+}
