@@ -19,7 +19,7 @@ nav{
 #cal-container {
     position: relative;
     top: 25px;
-    left: -180px;
+    left: -235px;
 }
 
 #cal-mth,
@@ -79,6 +79,8 @@ nav{
 /* [ADD/EDIT EVENT] */
 
 #cal-event form {
+    width: 380px;
+    height: 285px;
     padding: 15px;
     margin-top: 20px;
     background: #f5f5f5;
@@ -154,6 +156,31 @@ nav{
     margin: 10px;
     left: 340px;
     top: -335px;
+}
+
+.colorEvt{
+    font-family: webFont;
+    font-size: 16px;
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+#lab1, #lab2, #lab3{
+    margin-right:5px;
+}
+
+.colorEvt p{
+    width: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.btnEvt{
+    position: relative;
+    top: 40px;
+    left: -300px;
+
+    border-radius: 5px;
 }
 
 .green {
