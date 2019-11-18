@@ -40,6 +40,15 @@ a {
   color: #467370;
 }
 
+.forgot#forgot{
+  display: flex;
+  text-decoration:none;
+  color: rgb(240, 6, 6);
+  line-height: 1.7;
+  justify-content: center;
+}
+
+
 a:focus {
 	outline: none !important;
 }
