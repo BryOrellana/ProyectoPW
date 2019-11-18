@@ -106,7 +106,6 @@ var cal = {
     show : function (el) {
     // cal.show() : show edit event docket for selected day
     // PARAM el : Reference back to cell clicked
-  
       // FETCH EXISTING DATA
       cal.sDay = el.getElementsByClassName("dd")[0].innerHTML;
   
@@ -114,6 +113,10 @@ var cal = {
       var tForm = "<h1>" + (cal.data[cal.sDay] ? "Editar" : "Agregar") + " reserva</h1>";
       tForm += "<div id='evt-date'>" + cal.sDay + " " + cal.mName[cal.sMth] + " " + cal.sYear + "</div>";
       tForm += "<textarea id='evt-details' placeholder = 'ingresa tu carnet para confirmar' required>" + (cal.data[cal.sDay] ? cal.data[cal.sDay] : "") + "</textarea>";
+      tForm += "<label for='Start'>Hora de inicio: </label>";
+      tForm += "<input id='Start' type='time'><br>";
+      tForm += "<label for='End'>Hora de fin: </label>";
+      tForm += "<input id='End' type='time'><br><br>";
       tForm += "<div class='colorEvt'> <div class='green' id = 'lab1'> </div><p>Lab 1</p>";
       tForm += "<div class='colorEvt'> <div class='green' id = 'lab2'> </div><p>Lab 2</p>";
       tForm += "<div class='colorEvt'> <div class='green' id = 'lab3'> </div><p>Lab 3</p>";
