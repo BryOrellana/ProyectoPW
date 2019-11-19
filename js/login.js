@@ -51,8 +51,12 @@ submit_btn.addEventListener("click", () => {
 
             if (log == true) {
                 btnLogout.display = 'block';
-            } else {
+        }})
 
+        window.onload = function() {
+            if(pgClient.connect()){
+                console.log("Si funciona prro")
+            }else{
+                console.log("Nel no funca esta shit")
             }
-
-        })
+          };
