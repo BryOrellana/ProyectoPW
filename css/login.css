@@ -46,6 +46,25 @@ a {
   color: rgb(240, 6, 6);
   line-height: 1.7;
   justify-content: center;
+  margin-top: 25px;
+}
+
+.new#new{
+  margin-top: 15px;
+  display: flex;
+  text-decoration:none;
+  color: rgb(13, 9, 226);
+  line-height: 1.7;
+  justify-content: center;
+}
+
+.label-plat{
+  display: flex;
+  text-decoration:none;
+  color: rgb(0, 0, 0);
+  line-height: 1.7;
+  justify-content: center;
+  font-size: 25px;
 }
 
 

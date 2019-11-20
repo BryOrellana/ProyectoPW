@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Inicia Sesion</title>
+	<title>Registrar cuenta</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
 	<!--===========================CSS PAL NAV====================================-->
 	<link rel="stylesheet" href="css/grayscale.css">
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,10 +43,10 @@
 
 <!--Login Form-->
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('img/loginFondo.jpg');">
+		<div class="container-login100" style="background-image: url('img/stars.jpg');">
 			<div class="wrap-login100 p-t-30 p-b-50">
 				<span class="login100-form-title p-b-41">
-					Accede a tu cuenta!
+					Registra un Usuario!
 				</span>
 				<form class="login100-form validate-form p-b-33 p-t-5">
 
@@ -58,24 +58,19 @@
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
 						<input class="input100" type="password" name="pass" placeholder="Contraseña" id="password_field">
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
-					</div>
-
-					<div>
-						<a class ="forgot" id="forgot" href="changePassword.html">Olvidaste tu contraseña?</a>
-					</div>
+                    </div>
+                    
+                    <div class="wrap-input100 validate-input" data-validate="Enter password">
+                            <input class="input100" type="password" name="pass" placeholder="Confirmar contraseña" id="password_field">
+                            <span class="focus-input100" data-placeholder="&#xe80f;"></span>
+                    </div>
 
 					<div class="container-login100-form-btn m-t-32">
 						<button class="login100-form-btn" type="button">
-							<a class = "clickBigger" href="/index.html" id="submit_btn" >Entrar!</a>
+							<a class = "clickBigger" href="/index.html" id="submit_btn" >Crear!</a>
 						</button>
 					</div>
-					<hr>
-					<div>
-						<p>
-						<label class="label-plat"for="new">Nuevo en la plataforma?</label>
-						<a class ="new" id="new" href="register.html">Registrate aquí</a>
-						</p>
-					</div>
+
 				</form>
 			</div>
 		</div>
