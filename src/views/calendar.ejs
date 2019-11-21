@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reserva</title>
+    <link href="/public/css/grayscale.css" rel="stylesheet">
+    <link href="/public/css/calendario.css" rel="stylesheet">
+    <script src="/public/js/calendario.js"></script>
+    <script src="/public/js/grayscale.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/public/css/util.css">
+    <link href="/public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+   
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="container">
+		  <a class="navbar-brand js-scroll-trigger" href="/index.ejs"><img src="/public/img/deiL.png" alt="dei"></a>
+		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			Menu
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="/index.ejs">Inicio</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="/calendar.ejs">Reserva</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="/index.ejs#signup">Contacto</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="/login.ejs">Cerrar Sesión</a>
+			  </li>
+			</div>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+
+    <main>
+        <div class="reserva">RESERVA</div>
+
+        <div id="page-body">
+            <!-- [PERIOD SELECTOR] -->
+            <div id="cal-date">
+                <select id="cal-mth"></select>
+                <select id="cal-yr"></select>
+                <input id="cal-set" type="button" value="Seleccionar" />
+            </div>
+
+            <!-- [CALENDAR] -->
+            <div id="cal-container"></div>
+
+            <!-- [EVENT] -->
+            <div id="cal-event"></div>
+
+            <!--Colors-->
+            <div class="colors">
+                <div class="colorDiv">
+                    <div class="green"></div>
+                    <div class="text">Disponible</div>
+                </div>
+                <div class="colorDiv">
+                    <div class="yellow"></div>
+                    <div class="text">En proceso</div>
+                </div>
+                <div class="colorDiv">
+                    <div class="red"></div>
+                    <div class="text">Ocupado/en uso</div>
+                </div>
+
+            </div>
+
+
+            <!--Checkbox's-->
+            <div class="checkboxes">
+                <div class="check">
+                    <input type="checkbox" name="checkL" value="L1" id="l1" checked="checked">
+                    <div class="mov"></div>
+                    <label for="l1" name="Lab1" class="check">
+                        <p class="txtBtn">Lab 1</p>
+                    </label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="checkL" value="L2" id="l2" checked="checked">
+                    <div class="mov"></div>
+                    <label for="l2" name="Lab2" class="check">
+                        <p class="txtBtn">Lab 2</p>
+                    </label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="checkL" value="L3" id="l3" checked="checked">
+                    <div class="mov"></div>
+                    <label for="l3" name="Lab1" class="check">
+                        <p class="txtBtn">Lab 3</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </main>
+
+      <!-- Bootstrap core JavaScript -->
+  <script src="/public/vendor/jquery/jquery.min.js"></script>
+  <script src="/public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

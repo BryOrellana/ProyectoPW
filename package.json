@@ -1,0 +1,35 @@
+{
+  "name": "ProyectoPW",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.7.4",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "mongodb": "^3.3.4",
+    "mongoose": "^5.7.12",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "pg": "^7.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryOrellana/ProyectoPW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryOrellana/ProyectoPW/issues"
+  },
+  "homepage": "https://github.com/BryOrellana/ProyectoPW#readme"
+}
