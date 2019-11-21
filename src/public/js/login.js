@@ -23,7 +23,7 @@ submit_btn.addEventListener("click", () => {
 
                 if (carnet_regex.test(carnet) && password_field.value == carnet_field.value) {
                     alert("Bienvenido " + carnet_field.value + " :D");
-
+                    
                     /*if(carnetBD == carnet.value && passBD == password_field.value) {
                         alert("Bienvenido :D ");
                     }*/
