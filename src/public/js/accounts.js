@@ -5,13 +5,12 @@ function AgFila(usuario, cuenta){
     var newRow = document.createElement("tr");
 
     filas.push({
-        "id":0,
         "usuario": usuario,
-        "cuenta": cuenta
+        "rol": rol
     });
 
     newRow.innerHTML = `<td><b>${usuario}</b></td> 
-    <td>${cuenta}</td>`;
+    <td>${rol}</td>`;
 
     var Contenedor= document.createElement("td");
     var deleteButton= document.createElement("button");
@@ -61,6 +60,4 @@ window.onload = function()
 {
     var carnet_field = document.querySelector("#carnet_field");
     var tBody = document.querySelector("#table_body");
-
-    var carnetRegex = new RegExp('[0-9]{8}');
 }

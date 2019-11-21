@@ -5,27 +5,27 @@ router.get('/', (req,res) => {
     res.render('index');
 });
 
-router.get('/login.ejs', (req,res) => {
+router.get('/login', (req,res) => {
     res.render('login');
 });
 
-router.get('/calendar.ejs', (req,res) => {
+router.get('/calendar', (req,res) => {
     res.render('calendar');
 });
 
-router.get('/changePassword.ejs', (req,res) => {
+router.get('/changePassword', (req,res) => {
     res.render('changePassword');
 });
 
-router.get('/index.ejs', (req,res) => {
+router.get('/index', (req,res) => {
     res.render('index');
 });
 
-router.get('/register.ejs', (req,res) => {
+router.get('/register', (req,res) => {
     res.render('register');
 });
 
-router.get('/accounts.ejs', (req,res) => {
+router.get('/accounts', (req,res) => {
     res.render('accounts');
 });
 
