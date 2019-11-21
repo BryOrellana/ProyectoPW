@@ -42,8 +42,8 @@ function AgFila(carnet, schedule, late, tBody){
             deleteButton.addEventListener("click", function(event){
                 var idElement = event.srcElement.value;
                 var trToDelete = document.querySelector(`button[value='${idElement}']`).parentElement.parentElement;
-
-
+                
+        
                 tBody.removeChild(trToDelete);
                 filas.forEach((item, index)=>{
                     if(item.id==idElement){
@@ -51,9 +51,9 @@ function AgFila(carnet, schedule, late, tBody){
                     }
                 });
             });
-
+            
         }
-
+  
 
     });
 
@@ -80,7 +80,7 @@ window.onload = function()
 
     var carnetRegex = new RegExp('[0-9]{8}');
 
-
+    
     submit_btn.addEventListener("click", ()=>{
         var carnet = carnet_field.value;
         //checked: un booleano para ver si esta seleccionado o no.
@@ -107,4 +107,4 @@ window.onload = function()
         }
 
     });
-} 
+}
