@@ -1,11 +1,14 @@
 'use strict'
-const mongoose = requiere('mongoose');
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-    carnet: Number,
+    carnet: String,
     password: String,
-    rol: String
+    rol: {
+        type: String,
+        default: 'Estudiante' 
+    },
 })
 
 module.exports = mongoose.model('User', UserSchema);
