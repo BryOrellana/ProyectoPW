@@ -1,0 +1,36 @@
+{{#if message}}
+    {{message}}
+{{/if}}
+<table border="1">
+
+        <tr>
+
+                <th>Carnet</th>
+                <th>Rol</th>
+                <th>Action</th>
+
+        </tr>
+ 
+       Record Found {{ users.length  }}
+        {{#each users}}
+        <tr>
+
+                <td>{{carnet}}</td>
+                <td>{{rol}}</td>
+                <td>
+                        <a href='edit/{{_id}}'>Edit</a> |    
+                 
+                        <a href='delete/{{_id}}'>Delete</a>
+                </td>
+
+        </tr>
+
+        {{else}}
+
+        
+                 No Record Found
+        
+        {{/each}}
+</table>
+
+ 

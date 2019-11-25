@@ -48,4 +48,50 @@ router.post('/addUser', async (req,res) =>{
     res.redirect('/');
 });
 
+router.get('/display', function(req, res) {
+    User.find(function(err, users) {
+        if (err) {
+            console.log(err);
+        } else {
+            res.render('display', { users: users });
+            console.log(users);
+        }
+    });
+});
+
+router.get('/delete/:id', function(req, res) {
+    User.findByIdAndRemove(req.params.id, function (err, project) {
+      if (err) {
+      
+      res.redirect('../display');
+      } else {
+        
+        res.redirect('../display');
+      }
+    });
+  });
+
+  router.get('/edit/:id', function(req, res) {
+    console.log(req.params.id);
+    User.findById(req.params.id, function(err, user) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(user);
+
+            res.render('edit', { userDetail: user });
+        }
+    });
+});
+
+  router.post('/edit/:id', function(req, res) {
+    User.findByIdAndUpdate(req.params.id, req.body, function(err) {
+        if (err) {
+            res.redirect('edit/' + req.params.id);
+        } else {
+            res.redirect('../display');
+        }
+    });
+});
+
 module.exports = router;

@@ -1,0 +1,35 @@
+{{#if message}} {{message}} {{/if}}
+
+ 
+<form method="post">
+
+    <table>
+
+        <tr>
+            <td>Carnet: </td>
+            <td>
+                <input type="text" placeholder="Carnet" name="carnet" value="{{userDetail.carnet}}" required> </td>
+        </tr>
+        <tr>
+            <td>Rol: </td>
+            <td>
+                <input type="text" placeholder="Rol" name="rol" value="{{userDetail.rol}}" required>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <input type="submit">
+                  <input type="button" value="Display" onclick="window.location='display';">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+</form>
+
+ 
