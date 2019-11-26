@@ -3,11 +3,15 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ReservaSchema = new Schema({
-    carnet_user: Number,
+    carnet_user: {
+        type: Number,
+        required: true
+    
+    },
     numero_laboratorio: Number,
     estado: {
-        type: Boolean,
-        default: false 
+        type: String,
+        default: 'Espera' 
     },
     fecha: Date,
     hora_inicio: Timestamp,
