@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const User = require('../models/user');
+const msge = require("../models/mensaje")
 
 router.get('/', async (req,res) => {
     const users = await User.find();
@@ -48,6 +49,12 @@ router.post('/addUser', async (req,res) =>{
     res.redirect('/');
 });
 
+router.post('/addMsg', async (req,res) =>{
+    const mesg = new msge(req.body);
+    await mesg.save();
+    res.redirect('/');
+});
+
 router.get('/display', function(req, res) {
     User.find(function(err, users) {
         if (err) {
@@ -55,6 +62,17 @@ router.get('/display', function(req, res) {
         } else {
             res.render('display', { users: users });
             console.log(users);
+        }
+    });
+});
+
+router.get('/message', function(req, res) {
+    msge.find(function(err, mesag) {
+        if (err) {
+            console.log(err);
+        } else {
+            res.render('mensajes', { mesag: mesag });
+            console.log(mesag);
         }
     });
 });

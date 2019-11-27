@@ -1,0 +1,32 @@
+{{#if message}}
+    {{message}}
+{{/if}}
+<table border="1">
+
+        <tr>
+
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Mensaje</th>
+
+        </tr>
+ 
+       Record Found {{ mesag.length  }}
+        {{#each mesag}}
+        <tr>
+
+                <td>{{Nombre}}</td>
+                <td>{{correo}}</td>
+                <td>{{Mensaje}}</td>
+
+        </tr>
+
+        {{else}}
+
+        
+                 No Record Found
+        
+        {{/each}}
+</table>
+
+ 

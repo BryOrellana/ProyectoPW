@@ -116,7 +116,7 @@
     </div>
   </section>
 
-  <!-- Signup Section -->
+  <!-- Contact Section -->
   <section id="signup" class="signup-section">
     <div class="container">
       <div class="column">
@@ -124,14 +124,14 @@
           <i class="fas fa-comments fa-2x mb-2 text-white"></i>
           <h2 class="text-white mb-5">Envianos un mensaje!</h2>
 
-          <form class="form-inline d-flex">
-            <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputName"
+          <form action="/addMsg" method="POST" class="form-inline d-flex">
+            <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="Nombre" id="Name_Field"
               placeholder="Nombre...">
 
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail"
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="correo"  id="Email_Field"
               placeholder="Ingresa tu correo...">
 
-            <textarea class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMesagge"
+            <textarea class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="Mensaje" id="Message_Field"
               placeholder="Mensaje..."></textarea>
 
             <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
