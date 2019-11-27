@@ -16,6 +16,7 @@ const UserSchema = new Schema({
         type: String,
         default: 'Estudiante'
     },
+    login_count: Number
 })
 
 module.exports = mongoose.model('User', UserSchema);
