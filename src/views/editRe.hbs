@@ -1,0 +1,38 @@
+{{#if message}} {{message}} {{/if}}
+
+ 
+<form method="post">
+
+    <table>
+
+        <tr>
+            <td>Carnet: </td>
+            <td>
+                <input type="text" placeholder="Carnet" name="carnet_user" value="{{reseDetail.carnet_user}}" required> </td>
+        </tr>
+        <tr>
+            <td>Laboratorio: </td>
+            <td>
+                <input type="text" placeholder="Laboratorio" name="numero_laboratorio" value="{{reseDetail.numero_laboratorio}}" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Estado: </td>
+            <td>
+                <input type="text" placeholder="Estado" name="estado" value="{{reseDetail.estado}}" required>
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <input type="submit">
+                  <input type="button" value="Reservas" onclick="window.location='reservas';">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+</form>

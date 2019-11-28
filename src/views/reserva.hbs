@@ -50,32 +50,29 @@
                 <span class="login100-form-title p-b-41">
                     Reserva
                 </span>
-                <form class="login100-form validate-form p-b-33 p-t-5">
+                <form method="POST" action="/addRes" class="login100-form validate-form p-b-33 p-t-5">
 
                     <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" name="carnet" placeholder="00000000" id="carnet_field">
+                        <input class="input100" type="text" name="carnet_user" placeholder="00000000" id="carnet_field">
                         <span class="focus-input100" data-placeholder="&#xe82a;"></span>
                     </div>
                     <div class="checkboxes">
 
                         <div class="check">
-                            <input type="checkbox" name="checkL" value="L1" id="l1" unchecked="unchecked">
-                            <div class="mov"></div>
+                            <input type="checkbox" name="numero_laboratorio" value="L1" id="l1" unchecked="unchecked">
                             <label for="l1" name="Lab1" class="check">
                                 <p class="txtBtn">Labo 1</p>
                             </label>
                         </div>
                         <div class="check">
-                            <input type="checkbox" name="checkL" value="L2" id="l2" unchecked="unchecked">
-                            <div class="mov"></div>
+                            <input type="checkbox" name="numero_laboratorio" value="L2" id="l2" unchecked="unchecked">
                             <label for="l2" name="Lab2" class="check">
                                 <p class="txtBtn">Labo 2</p>
                             </label>
 
                         </div>
                         <div class="check">
-                            <input type="checkbox" name="checkL" value="L3" id="l3" unchecked="unchecked">
-                            <div class="mov"></div>
+                            <input type="checkbox" name="numero_laboratorio" value="L3" id="l3" unchecked="unchecked">
                             <label for="l3" name="Lab3" class="check">
                                 <p class="txtBtn">Labo 3</p>
                             </label>
@@ -86,22 +83,19 @@
                     
                     <div class="wrap-input100 validate-input date_labo">
                         <label class="label-plat" for="date_labo">Fecha deseada:</label>
-                        <input type="date" class="date_labo" name="date" id="date_labo">
+                        <input type="date" class="date_labo" name="fecha" id="date_labo">
                     </div>
-
-                    <section>
                         <div class="wrap-input100 validate-input start_time">
                             <label class="label-plat" for="date_labo">Hora de inicio:</label>
-                            <input type="time" class="start_time" name="start" id="start_time">
+                            <input type="time" class="start_time" name="hora_inicio" id="start_time">
                         </div>
                         <div class="wrap-input100 validate-input end_time">
                             <label class="label-plat" for="date_labo">Hora de fin:</label>
-                            <input type="time" name="end" id="end_time">
+                            <input type="time" name="hora_final" id="end_time">
                         </div>
-                    </section>
                     <div class="container-login100-form-btn m-t-32">
-                        <button class="login100-form-btn" type="button">
-                            <a class="clickBigger" href="/" id="submit_btn">Reservar!</a>
+                        <button class="login100-form-btn" type="submit">
+                            <a class="clickBigger" id="submit_btn">Reservar!</a>
                         </button>
                     </div>
                 </form>

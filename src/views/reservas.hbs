@@ -7,22 +7,25 @@
 
                 <th>Carnet</th>
                 <th>Laboratorio</th>
+                <th>Estado</th>
                 <th>Fecha</th>
                 <th>Hora inicio</th>
                 <th>Hora final</th>
 
         </tr>
  
-       Record Found {{ users.length  }}
-        {{#each users}}
+       Record Found {{ rese.length  }}
+        {{#each rese}}
         <tr>
 
-                <td>{{carnet}}</td>
-                <td>{{rol}}</td>
+                <td>{{carnet_user}}</td>
+                <td>{{numero_laboratorio}}</td>
+                <td>{{estado}}</td>
+                <td>{{fecha}}</td>
+                <td>{{hora_inicio}}</td>
+                <td>{{hora_final}}</td>
                 <td>
-                        <a href='edit/{{_id}}'>Edit</a> |    
-                 
-                        <a href='delete/{{_id}}'>Delete</a>
+                        <a href='editR/{{_id}}'>Editar Estado</a>   
                 </td>
 
         </tr>
