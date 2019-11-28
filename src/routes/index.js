@@ -21,6 +21,10 @@ router.get('/calendar', (req,res) => {
 router.get('/changePassword', (req,res) => {
     res.render('changePassword');
 });
+
+router.get('/reserva', (req,res) => {
+    res.render('reserva');
+});
 /*
 router.get('/index', async (req,res) => {
     res.render('index');
