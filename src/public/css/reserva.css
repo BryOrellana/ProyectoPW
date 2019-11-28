@@ -103,6 +103,30 @@
     margin-bottom: 15px;
 }
 
+.tablaD{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.tablaE{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.tablaM{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.tablaRES{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
   p.txtBtn{
     color: #c80000;
     font-size: 15px;
