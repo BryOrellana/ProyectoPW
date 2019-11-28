@@ -4,6 +4,9 @@ const router = express.Router();
 const User = require('../models/user');
 const msge = require("../models/mensaje");
 const rese = require('../models/reserva');
+const passport = require('passport');
+const { isAuthenticated} = require('../helpers/auth')
+
 
 router.get('/', async (req,res) => {
     const users = await User.find();
@@ -12,8 +15,14 @@ router.get('/', async (req,res) => {
 });
 
 router.get('/login', (req,res) => {
-    res.render('login');
+    res.render('login');  
 });
+
+router.post('/login', passport.authenticate('local', {
+    successRedirect: '/',
+    failureRedirect: '/login'
+}));
+
 
 router.get('/calendar', (req,res) => {
     res.render('calendar');
@@ -23,7 +32,7 @@ router.get('/changePassword', (req,res) => {
     res.render('changePassword');
 });
 
-router.get('/reserva', (req,res) => {
+router.get('/reserva',(req,res) => {
     res.render('reserva');
 });
 /*
@@ -35,7 +44,7 @@ router.get('/register', (req,res) => {
     res.render('register');
 });
 
-router.get('/accounts', (req,res) => {
+router.get('/accounts',(req,res) => {
     res.render('accounts');
 });
 
@@ -60,7 +69,7 @@ router.post('/addMsg', async (req,res) =>{
     res.redirect('/');
 });
 
-router.post('/addRes', async (req,res) =>{
+router.post('/addRes',async (req,res) =>{
     const reser = new rese(req.body);
     await reser.save();
     res.redirect('/reserva');

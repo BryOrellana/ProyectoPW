@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 var usersRouter = require('./routes/users');
 const multer = require('multer');
 const session = require('express-session');
+const passport = require('passport');
 
 //connecting database
 
@@ -14,6 +15,7 @@ mongoose.connect('mongodb://localhost/reserva')
 .catch(err => console.log(err));
 //importing routes
 const indexRoutes = require('./routes/index');
+require('../config/passport');
 
 
 //SETTINGS
@@ -29,6 +31,8 @@ app.use(session({
     resave : true,
     saveUninitialized: true
 }))
+app.use(passport.initialize());
+app.use(passport.session());
 
 //routes
 app.use('/',indexRoutes);
