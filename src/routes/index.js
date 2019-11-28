@@ -32,8 +32,15 @@ router.get('/changePassword', (req,res) => {
     res.render('changePassword');
 });
 
-router.get('/reserva',(req,res) => {
-    res.render('reserva');
+router.get('/reserva', function(req, res) {
+    rese.find(function(err, rese) {
+        if (err) {
+            console.log(err);
+        } else {
+            res.render('reserva', { rese: rese });
+            console.log(rese);
+        }
+    });
 });
 /*
 router.get('/index', async (req,res) => {

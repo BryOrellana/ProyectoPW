@@ -106,7 +106,15 @@
 .tablaD{
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: rgb(190, 190, 190);
+}
+
+td{
+  padding: 10 10 10 10;
+}
+
+th{
+  padding: 10 10 10 10;
 }
 
 .tablaE{
