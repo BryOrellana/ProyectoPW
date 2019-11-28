@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose')
 var usersRouter = require('./routes/users');
 const multer = require('multer');
+const session = require('express-session');
 
 //connecting database
 
@@ -23,7 +24,11 @@ app.set('view engine', 'hbs');
 //MIDDLEWARES
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
-
+app.use(session({
+    secret: 'mysecretapp',
+    resave : true,
+    saveUninitialized: true
+}))
 
 //routes
 app.use('/',indexRoutes);
