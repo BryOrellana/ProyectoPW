@@ -77,7 +77,7 @@ router.get('/display', function(req, res) {
     });
 });
 
-router.get('/message', function(req, res) {
+router.get('/mensajes', function(req, res) {
     msge.find(function(err, mesag) {
         if (err) {
             console.log(err);
